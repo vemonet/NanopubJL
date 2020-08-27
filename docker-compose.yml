@@ -4,6 +4,8 @@ services:
     build: .
     ports:
       - 8888:8888
+    volumes:
+      - ~/.nanopub:/root/.nanopub
 
   mockworkflowhub:
     image: library/python:3.7-alpine
